@@ -177,7 +177,7 @@ hr {
 .services {
     display: flex;
     height: 616px;
-    background-image: url("../assets/img/Mask\ Group_1.svg");
+    background-image: url("../assets/img/Mask\ Group_.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -346,6 +346,8 @@ hr {
 }
 
 .all_news_title {
+    font-size: 20px;
+    font-weight: 900;
     margin-right: 12px;
 }
 
@@ -355,7 +357,7 @@ hr {
 
 .send_request {
     height: 720px;
-    background-image: url("../assets/img/Photo-600\ \(1\)\ 1.svg");
+    background-image: url("../assets/img/Photo-600\ \(1\).svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
