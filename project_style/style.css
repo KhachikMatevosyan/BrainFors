@@ -2,6 +2,10 @@ body {
     font-family: Raleway;
 }
 
+a {
+    text-decoration: none;
+}
+
 .margin_auto {
     margin: 0 auto;
 }

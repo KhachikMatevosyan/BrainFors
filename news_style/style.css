@@ -1,0 +1,141 @@
+body {
+    font-family: Raleway;
+}
+
+a {
+    text-decoration: none;
+}
+
+.margin_auto {
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(90deg, rgba(153, 27, 31, 1) 33%, rgba(237, 28, 36, 1) 69%, rgba(237, 28, 36, 1) 99%);
+    padding-top: 28px;
+    padding-bottom: 42px;
+}
+
+.header_menu ul li {
+    list-style: none;
+}
+
+.header_menu a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+}
+
+.header_item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_menu {
+    display: flex;
+}
+
+.header_logo {
+    display: flex;
+}
+
+.news_vector {
+    display: flex;
+    height: 2280px;
+    background-image: url(../assets/img/news/Vector\ 1.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto 88%;
+    margin-left: 110px;
+}
+
+.news_title {
+    font-size: 50px;
+    font-weight: 900;
+    padding-top: 58px;
+}
+
+.news_contener_info_text_title {
+    width: 374px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.news_contener_info_text p {
+    width: 670px;
+    padding-right: 30px;
+}
+
+.news_contener_info_text {
+    padding-top: 84px;
+}
+
+.news_contener_info_text img {
+    padding-top: 20px;
+}
+
+.news_contener_info_img {
+    width: 598px;
+    height: 400px;
+    background-image: url(../assets/img/project/Photo-164\ \(1\)\ 2-min.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.news_contener_info {
+    display: flex;
+}
+
+.news_contener_info_02 {
+    display: flex;
+    padding-top: 94px;
+    margin-left: -102px;
+}
+
+.news_contener_info_text_02 p {
+    width: 670px;
+    padding-right: 30px;
+}
+
+.news_contener_info_text_02 {
+    padding-top: 84px;
+    padding-left: 30px;
+}
+
+.news_contener_info_03 {
+    display: flex;
+    padding-top: 32px;
+}
+
+.news_contener_info_04 {
+    display: flex;
+    padding-top: 138px;
+    margin-left: -102px;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.footer_item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_nav {
+    display: flex;
+}
+
+.footer_nav ul li {
+    list-style: none;
+}
+
+.footer_nav a {
+    text-decoration: none;
+    color: #A31C21;
+    font-size: 12px;
+}
