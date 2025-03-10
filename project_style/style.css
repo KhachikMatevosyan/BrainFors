@@ -24,11 +24,20 @@ a {
     padding-bottom: 42px;
 }
 
-.header_menu ul li {
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu ul li {
     list-style: none;
 }
 
-.header_menu a {
+.menu a {
     text-decoration: none;
     font-size: 12px;
     color: #fff;
@@ -40,7 +49,7 @@ a {
     align-items: center;
 }
 
-.header_menu {
+.menu {
     display: flex;
 }
 
@@ -58,6 +67,7 @@ a {
 }
 
 .project_title {
+    display: flex;
     font-size: 50px;
     font-weight: 900;
     padding-left: 228px;
@@ -171,4 +181,86 @@ a {
     text-decoration: none;
     color: #A31C21;
     font-size: 12px;
+}
+
+@media(max-width:1200px) {
+    .project_info_01_img {
+        width: 500px;
+    }
+
+    .project_info_01_text {
+        width: 500px;
+    }
+}
+
+@media(max-width:992px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        width: 100%;
+        background: linear-gradient(90deg, rgba(153, 27, 31, 1) 50%, rgba(237, 28, 36, 1) 69%);
+        text-align: center;
+        opacity: 0.9;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .menu ul li {
+        padding: 10px;
+    }
+
+    .menu a {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project_contener_03 {
+        display: none;
+    }
+
+    .project_contener_04 {
+        display: none;
+    }
+
+    .project_info_01_img {
+        width: 400px;
+    }
+
+    .project_info_01_text {
+        width: 400px;
+    }
+}
+
+@media(max-width:767px) {
+    .project_info_01_img {
+        width: 400px;
+    }
+
+    .project_info_01_text {
+        width: 300px;
+    }
+
+    .project_title {
+        padding-left: 20px;
+    }
+
+    .footer_item {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
 }

@@ -7,6 +7,7 @@ body {
 }
 
 .wrapper {
+    max-width: 1920px;
     display: flex;
     min-height: 100%;
     overflow: hidden;
@@ -298,6 +299,7 @@ body {
 
     .container_01_info {
         margin: 0;
+        padding: 0 20px;
     }
 
     .container_01_img {

@@ -2,6 +2,13 @@ body {
     font-family: Raleway;
 }
 
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
 .margin_auto {
     margin: 0 auto;
 }
@@ -12,11 +19,20 @@ body {
     padding-bottom: 42px;
 }
 
-.header_menu ul li {
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu ul li {
     list-style: none;
 }
 
-.header_menu a {
+.menu a {
     text-decoration: none;
     font-size: 12px;
     color: #fff;
@@ -28,7 +44,7 @@ body {
     align-items: center;
 }
 
-.header_menu {
+.menu {
     display: flex;
 }
 
@@ -173,4 +189,92 @@ body {
     text-decoration: none;
     color: #A31C21;
     font-size: 12px;
+}
+
+@media(max-width:1200px) {
+    .services_contener_1_info {
+        padding-left: 20px;
+    }
+
+    .services_contener_1_img {
+        margin: 0;
+    }
+
+    .services_contener_2_info {
+        display: none;
+    }
+
+    .slider_img :nth-last-child(-n+1) {
+        display: none;
+    }
+
+    .services_contener_2_vector {
+        height: 32vw;
+    }
+}
+
+@media(max-width:992px) {
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        width: 100%;
+        background: linear-gradient(90deg, rgba(153, 27, 31, 1) 50%, rgba(237, 28, 36, 1) 69%);
+        text-align: center;
+        opacity: 0.9;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .menu ul li {
+        padding: 10px;
+    }
+
+    .menu a {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services_contener_1_text {
+        width: 400px;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    .footer_item {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:767px) {
+    .services_contener_1_info {
+        display: flex;
+        flex-direction: column
+    }
+
+    .services_contener_1_title {
+        padding-left: 20px;
+    }
+
+    .services_slider {
+        display: none;
+    }
 }

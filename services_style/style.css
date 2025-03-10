@@ -1,9 +1,11 @@
 body {
     font-family: Raleway;
+    overflow-x: hidden;
 }
 
 .wrapper {
     display: flex;
+    max-width: 1920px;
     min-height: 100%;
     overflow: hidden;
     flex-direction: column;
@@ -72,7 +74,7 @@ body {
 }
 
 .services_contener_01 {
-    width: 1511px;
+    width: 100%;
     height: 764px;
     background-image: url("../assets/img/fon-min.svg");
     background-position: center;
@@ -144,7 +146,7 @@ body {
 }
 
 .services_contener_02 {
-    width: 1511px;
+    width: 100%;
     height: 764px;
     background-image: url("../assets/img/fon-min.svg");
     background-position: center;
@@ -190,6 +192,23 @@ body {
     font-size: 12px;
 }
 
+@media(max-width:1920px) {
+    .services_wrapper {
+        width: 100%;
+        height: 108vw;
+    }
+}
+
+@media(max-width:1200px) {
+    .services_contener_01_img_02 {
+        width: 472px;
+    }
+
+    .services_contener_01_img_01 {
+        width: 472px;
+    }
+}
+
 @media(max-width:992px) {
 
     .menu {
@@ -233,6 +252,20 @@ body {
 
     .services_contener_02_img {
         display: none;
+
     }
 
+    .services_vector_02 {
+        display: none;
+    }
+}
+
+@media(max-width:767px) {
+    .services_title {
+        padding-left: 20px;
+    }
+
+    .services_contener_01_img_01 {
+        width: 400px;
+    }
 }
